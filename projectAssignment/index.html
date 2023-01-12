@@ -5,13 +5,66 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+<!-- style="background-image: url(./public/Cover.svg); background-size: cover"
+ -->
 
-<body>
-  <div id="app"></div>
-  <script type="module" src="/main.js"></script>
+<body style="background-image: url(./public/Cover.svg); background-size: cover">
+  <div class="d-flex flex-col justify-content-center align-items-center" style="height: 100vh; width: 100vw;">
+
+    <div id="calculator">
+      <div class="d-flex flex-col justify-content-center align-items-center">
+
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <input type="text" id="display" readonly />
+        </div>
+      </div>
+
+      <div class="keypad">
+        <!-- one -->
+        <div class="row">
+          <div class="col-3"><button class="operator" id="clear">C</button></div>
+          <div class="col-3"><button class="operator" id="negate">+/-</button></div>
+          <div class="col-3"><button class="operator" id="percent">%</button></div>
+          <div class="col-3"><button class="operator" id="divide">/</button></div>
+        </div>
+        <!-- two -->
+        <div class="row">
+          <div class="col-3"><button class="number" id="7">7</button></div>
+          <div class="col-3"><button class="number" id="8">8</button></div>
+          <div class="col-3"><button class="number" id="9">9</button></div>
+          <div class="col-3"><button class="operator" id="multiply">*</button></div>
+        </div>
+        <!-- three -->
+        <div class="row">
+          <div class="col-3"><button class="number" id="4">4</button></div>
+          <div class="col-3"><button class="number" id="5">5</button></div>
+          <div class="col-3"><button class="number" id="6">6</button></div>
+          <div class="col-3"><button class="operator" id="subtract">-</button></div>
+        </div>
+        <!-- four -->
+        <div class="row">
+          <div class="col-3"><button class="number" id="1">1</button></div>
+          <div class="col-3"><button class="number" id="2">2</button></div>
+          <div class="col-3"><button class="number" id="3">3</button></div>
+          <div class="col-3"><button class="operator" id="add">+</button></div>
+        </div>
+        <!-- five -->
+        <div class="row">
+          <div class="col-6"><button style="width: 100%;" class="number" id="0">0</button></div>
+          <div class="col-3"><button class="operator" id="decimal">.</button></div>
+          <div class="col-3"><button class="operator" id="equals">=</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
