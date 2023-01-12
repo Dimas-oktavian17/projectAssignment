@@ -1,9 +1,9 @@
-import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "./style.css";
-import sun from "./public/bi_sun.svg";
-import moon from "./public/bx_bx-moon.svg";
-import cover from "./public/Cover.svg";
-import javascriptLogo from "./javascript.svg";
+// import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import "./style.css";
+// import sun from "./public/bi_sun.svg";
+// import moon from "./public/bx_bx-moon.svg";
+// import cover from "./public/Cover.svg";
+// import javascriptLogo from "./javascript.svg";
 // import { setupCounter } from "./counter.js";
 const display = document.getElementById("display");
 
